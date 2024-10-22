@@ -1,0 +1,23 @@
+81293
+I:\SC60\DBASE\ANGEST3.PRJ
+I:\SC60\DBASE\ANGEST3.OPT
+novcs
+ANGEST3.DEF
+2560766397 0 1.0 -1 -1 0 0 0 angest_3.cpp
+3281793469 0 1.0 -1 -1 0 0 0 dbase.cpp
+2569023932 0 1.0 -1 0 0 0 0 dbdatum.cpp
+3291099581 0 1.0 -1 -1 0 0 0 dbdefine.cpp
+3631100324 0 1.0 -1 0 0 0 0 dblogic.cpp
+1109012898 0 1.0 -1 0 0 0 0 dbobjekt.cpp
+2520789437 0 1.0 -1 -1 0 0 0 dbstring.cpp
+1594634685 0 1.0 -1 0 0 0 0 dbzahl.cpp
+1554002365 0 1.0 -1 0 0 0 0 mystring.cpp
+2732077161 0 1.0 0 0 0 0 -1 g:\sc\include\dos.h
+1652699581 0 1.0 0 0 0 0 -1 dbdatum.hpp
+2935501240 0 1.0 0 0 0 0 -1 dbdefine.hpp
+2459709885 0 1.0 0 0 0 0 -1 dbheader.hpp
+3608949156 0 1.0 0 0 0 0 -1 dblogic.hpp
+2541498788 0 1.0 0 0 0 0 -1 dbobjekt.hpp
+2581868984 0 1.0 0 0 0 0 -1 dbstring.hpp
+3526111652 0 1.0 0 0 0 0 -1 dbzahl.hpp
+3164483992 0 1.0 0 0 0 0 -1 mystring.hpp

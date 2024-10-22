@@ -1,0 +1,16 @@
+81293
+I:\SC60\OBJEKT\BEKANNT1.PRJ
+BEKANNT1.OPT
+novcs
+BEKANNT1.DEF
+3622187448 0 1.0 -1 0 0 0 0 adresse.cpp
+3484168632 0 1.0 -1 0 0 0 0 bekannt.cpp
+3635294648 0 1.0 -1 0 0 0 0 datum.cpp
+3452055992 0 1.0 -1 0 0 0 0 mystring.cpp
+3485741496 0 1.0 -1 0 0 0 0 person.cpp
+2368614845 0 1.0 -1 1 0 0 0 testbek1.cpp
+3469226424 0 1.0 0 0 0 0 -1 adresse.hpp
+3614716344 0 1.0 0 0 0 0 -1 bekannt.hpp
+3468046776 0 1.0 0 0 0 0 -1 datum.hpp
+3448648120 0 1.0 0 0 0 0 -1 mystring.hpp
+2143695293 0 1.0 0 0 0 0 -1 person.hpp

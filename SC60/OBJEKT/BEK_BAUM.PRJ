@@ -1,0 +1,12 @@
+81293
+I:\SC60\OBJEKT\BEK_BAUM.PRJ
+BEK_BAUM.OPT
+novcs
+BEK_BAUM.DEF
+3622187448 0 1.0 -1 0 0 0 0 adresse.cpp
+2143957437 0 1.0 -1 -1 0 0 0 baum.cpp
+2342531517 0 1.0 -1 1 0 0 0 bek_baum.cpp
+3484168632 0 1.0 -1 0 0 0 0 bekannt.cpp
+3635294648 0 1.0 -1 0 0 0 0 datum.cpp
+3452055992 0 1.0 -1 0 0 0 0 mystring.cpp
+3485741496 0 1.0 -1 0 0 0 0 person.cpp

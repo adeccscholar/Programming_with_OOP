@@ -1,0 +1,11 @@
+81293
+I:\SC60\DBASE\DATUMTES.PRJ
+DATUMTES.OPT
+novcs
+DATUMTES.DEF
+3885380029 0 1.0 -1 1 0 0 0 datumtes.cpp
+2569023932 0 1.0 -1 0 0 0 0 dbdatum.cpp
+1109012898 0 1.0 -1 0 0 0 0 dbobjekt.cpp
+2732077161 0 1.0 0 0 0 0 -1 g:\sc\include\dos.h
+1652699581 0 1.0 0 0 0 0 -1 dbdatum.hpp
+2541498788 0 1.0 0 0 0 0 -1 dbobjekt.hpp

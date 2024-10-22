@@ -1,0 +1,10 @@
+81293
+I:\SC60\DBASE\ZAHLTEST.PRJ
+ZAHLTEST.OPT
+novcs
+ZAHLTEST.DEF
+1109012898 0 1.0 -1 0 0 0 0 dbobjekt.cpp
+1594634685 0 1.0 -1 0 0 0 0 dbzahl.cpp
+3787993533 0 1.0 -1 1 0 0 0 zahltest.cpp
+2541498788 0 1.0 0 0 0 0 -1 dbobjekt.hpp
+3526111652 0 1.0 0 0 0 0 -1 dbzahl.hpp

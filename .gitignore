@@ -1,0 +1,56 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+.dcu
+
+#visual studio
+*.user
+*.aps
+
+#intel vtune
+vtune
+Intel® VTune™ Profiler Results
+
+# special embarcadero files or directories
+__history
+__astcache
+__recovery
+*.local
+*.skincfg
+
+# special directories
+Win32
+Win64
+Release
+Debug
+.vs
+x64

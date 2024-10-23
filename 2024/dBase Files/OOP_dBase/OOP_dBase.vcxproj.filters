@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Old Source">
+      <UniqueIdentifier>{8111d54e-b9c2-416e-bbdf-318ff9caed27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Old Header">
+      <UniqueIdentifier>{48697e14-f834-4fd8-a260-d3168ea5f565}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OOP_dBase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DBASE.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBDATEN.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBDATUM.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBLOGIC.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBOBJEKT.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBSTRING.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBZAHL.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MYSTRING.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DBDEFINE.CPP">
+      <Filter>Old Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBDATEN.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBDATUM.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBDEFINE.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHEADER.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBLOGIC.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBOBJEKT.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBSTRING.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DBZAHL.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MYSTRING.HPP">
+      <Filter>Old Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -27,3 +27,24 @@ Nehmen wir die Quellen also als ein "Softwaremuseum". Auch dieser Begriff wurde 
 Es handelt sich auch um den Borland C++ Compiler, nicht mit dem späteren C++ Builder zu verwechseln. Da die Version 4.0 erschien, während ich das Buch schrieb, und neue Eigenschaften brachte, habe ich die Quellen und Projektdateien auch für diesen bereitgestellt.
 
 Es ist spannend zu sehen, ob diese Quellen, Jahre vor dem ersten Standard geschrieben, mit aktuellen Entwicklungssystemen noch nutzbar sind, und welche Anpassungen notwendig sind. Aber es ist ja gerade die Stärke von C++, dass auch ältere Sourcen noch in Systemen verwendet werden können.
+
+## dBase Dateien mit C++ verarbeiten
+
+Ich hatte es ja schon angekündigt, ich habe die dBase- Quellen aus dem obigen Archiv auf einen aktuellen Compiler migriert. Es war auch für mich interessant, ob man das ohne große Probleme hinbekommt, und welche Probleme generell auftreten. 
+
+Die gute Nachricht, es geht relativ einfach, weil nur einige Verschärfungen dazukommen. Auffällig ist die Verwendung des "char*" Parameters, die man heute nicht mehr als "char*" macht, sondern "const char*" benutzen muss. Damit verhindert man die Änderung von Konstanten, insbesondere Zeichenketten, die vom Compiler erzeugt wurden. In die selbe Gruppe fallen die Kopierkonstruktoren, diese werden nur erkannt, wenn sie mit einem "const&" Parameter geschrieben werden. Daraus folgt auch die Notwendigkeit, auch einige Selektoren zu "const" zu machen, zumindest wenn sie in den Kopierkonstruktoren verwendet werden. Und am Ende ist noch die Benutzung dieser bösen und unsicheren Methoden wie "strcpy", die man aber zumindest in Visual Studio per "#define _CRT_SECURE_NO_WARNINGS" zuschalten kann. Dieses muss sich am Anfang einer Datei, bevor die erste Headerdatei kommt, stehen.
+
+Am schwierigsten waren die nicht mehr vorhandenen Systemdatum- Klassen der DOS Zeit, aber es ist ja auch nur Routine, die neu geschrieben werden müssen. Und die Datei- Streams, die bei der Standardisierung noch mal überarbeitet und heute weniger Parameter haben. Ich habe hier einige Methoden, die hoffentlich mit C++98 verwendbar sind, ergänzt.
+
+Und Last but not least waren die Anpassungen der Namen der Headerfiles. Ich habe mich jetzt entschieden, nur die C++ Namen, die zwingend geändert werden müssen (fstream.h - fstream), anzupassen, und habe immer explizit den Namensraum geöffnet. Das sollte man mit modernen Quellen nicht machen, aber als ich die ursprünglichen Quellen geschrieben habe, gab es keine Namensräume (die kamen auch erst um die Zeit herum auf), und schon gar keine Standardbibliothek. 
+
+Also viel Spaß beim Ausprobieren, ich konnte die ausgegebene dbf- Datei mit Excel öffnen und alle Daten waren drin.
+
+## Zinberechnungen mit C
+
+Ich habe auch das Abschlussbeispiel aus dem C- Teil des Buches auf einen aktuellen Compiler übertragen. Zur Erinnerung, es geht da weniger um ein reines C- Programm, sondern um die Untermenge von C++, die sich auf die Sprache C bezieht. Deshalb waren das schon in den ursprünglichen cpp- Dateien, die mit C++ übersetzt wurden. Erwartungsgemäß ging das Anpassen hier wesentlich einfacher, es waren eigentlich nur kleine 3 Erweiterungen notwendig. Schließlich war C zu diesem Zeitpunkt bereits standardisiert (ANSI X3.159-1989 (C89), ISO/IEC 9899:1990 (C90)). Das zeigt, warum die enge Verwandtschaft von C und C++ für die Softwareentwicklung so wichtig ist, da in der Industrie, den Behörden und bei Banken und Versicherungen sehr viele wichtige Rechenprogramme in C geschrieben sind. Und es zeigt auch, wie wichtig ein unabhängiger Standardisierungsprozess ist.  
+
+Ok, zu den notwendigen Änderungen. Zum einen das "#define _CRT_SECURE_NO_WARNINGS" um die unsicheren Methoden wie strchr und strncpy zu erlauben, diese werden zwar nicht im eigentlichen Berechnungsteil genutzt, aber beim Lesen der Eingabe, und der Behandlung des ',' als Dezimaltrenner. In genau dieser Methode taucht dann auch das bekannte Problem mit dem "char*" Parameterwieder auf, der für modernes C++ nicht mehr erlaubt sein kann, falls im Quelltext eine direkte Benutzung erfolgt. Dadurch ist dann auch die direkte Verwendung des Parameters ausgeschlossen, die soll ja durch das Erzwingen des "const" unterbunden werden. Es muss also eine Kopie in der Funktion erzeugt werden, die dann manipuliert werden kann. Ich habe da jetzt bewusst die C Methoden "malloc" und "free" verwendet, damit es C like bleibt.
+
+Die letzte Änderung ist dann wirklich im Rechenteil, es wird heute ein expliziter cast in der Funktion "Rate()" benötigt, damit die "ZeitWertFaktor()" Funktion korrekt verwendet werden kann. 
+
